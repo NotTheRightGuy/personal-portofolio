@@ -1,0 +1,76 @@
+$left-padding: 5rem;
+
+.container {
+    height: 100vh;
+}
+
+.btm-wrapper {
+    .btm-wrapper__left {
+        height: 100%;
+        width: 35%;
+        float: left;
+        .btm-wrapper__left__top {
+            height: 50%;
+            .name {
+                padding-left: $left-padding;
+                padding-top: 2rem;
+                font-family: "Bebas Neue", cursive;
+                font-size: 16rem;
+                margin-top: 3rem;
+            }
+            .fullName-container {
+                height: 7.5rem;
+                padding-left: $left-padding;
+                font-family: "Lato", sans-serif;
+                font-size: 2.5rem;
+                font-weight: bolder;
+                margin-top: -2rem;
+                opacity: 0.8;
+                transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+                &:hover {
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
+                div {
+                    &:nth-child(2) {
+                        padding-left: 0.8rem;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .btm-wrapper__left__btm {
+            width: 40%;
+            height: 50%;
+            font-family: "Bebas Neue", cursive;
+            transform: rotate(90deg);
+            font-size: 10rem;
+            .age {
+                padding-left: 1rem;
+                padding-bottom: 2rem;
+                transition: transform 0.5s
+                    cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                position: relative;
+                &:hover {
+                    transform: translateY(-1rem);
+                    &::after {
+                        opacity: 1;
+                        bottom: 2rem;
+                    }
+                }
+                &::after {
+                    content: "years";
+                    font-size: 2rem;
+                    display: block;
+                    position: absolute;
+                    left: 8rem;
+                    bottom: 5rem;
+                    opacity: 0;
+                    transition: bottom 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
+                        opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                }
+            }
+        }
+    }
+}
