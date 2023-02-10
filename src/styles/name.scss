@@ -1,0 +1,36 @@
+$left-padding: 5rem;
+
+.btm-wrapper__left__top {
+    height: 50%;
+    .name {
+        width: 55%;
+        padding-left: $left-padding;
+        font-family: "Bebas Neue", cursive;
+        font-size: 16rem;
+        margin-top: 4rem;
+        transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        &:hover {
+            transform: translateX(2rem);
+        }
+    }
+    .fullName-container {
+        height: 7.5rem;
+        padding-left: $left-padding;
+        font-family: "Lato", sans-serif;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        opacity: 0.8;
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        div {
+            &:nth-child(2) {
+                padding-left: 0.8rem;
+                opacity: 0.8;
+            }
+        }
+    }
+}
