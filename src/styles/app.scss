@@ -1,9 +1,9 @@
-.container {
-    height: 100vh;
-}
-
 .btm-wrapper {
+    display: flex;
     .btm-wrapper-left {
         width: 34rem;
+    }
+    .btm-wrapper-right {
+        flex: 1;
     }
 }

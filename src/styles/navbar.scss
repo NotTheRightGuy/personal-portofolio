@@ -19,16 +19,14 @@
 }
 
 .navbar {
-    background-color: transparent;
-    height: 0.8rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     .left-container {
         display: flex;
         align-items: center;
         .logo {
-            height: 100px;
-            width: 100px;
+            height: 70px;
+            width: 70px;
             transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
             &:hover {
                 transform: rotate(360deg);
@@ -39,7 +37,6 @@
         .projects {
             @include smallTypography;
             margin-left: 22%;
-            position: relative;
             padding: 3px;
             transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
             &:hover {
@@ -58,17 +55,12 @@
         }
     }
     .right-container {
-        display: grid;
-        padding-right: 3rem;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        position: relative;
-
-        justify-items: end;
         .about,
         .contact {
             @include smallTypography;
-            padding: 3px;
             transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
             &:hover {
                 scale: (1.05);
